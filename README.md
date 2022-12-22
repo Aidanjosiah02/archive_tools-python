@@ -12,7 +12,7 @@ This script will only work if the media file is created using:
 
 ``` -o "%(channel)s - [%(channel_id)s]/%(playlist_title)s - [%(playlist_id)s]/%(upload_date)s - %(title)s - [%(id)s] - %(resolution)s.%(ext)s" ```
 
-You can do it in whatever way you please, just make sure the paths match.
+You can do it in whatever way you please, just make sure your paths match eachother.
 
 -
 
