@@ -21,4 +21,4 @@ This text file must be created from https://github.com/mikf/gallery-dl using the
 
 -
 
-batch_download.py downloads all files of the extension specified if they exist as direct links to a file. If you can inspect a webpage and the links to the files exist in the html, this will retrieve them.
+batch_download.py downloads all files of the extension specified if they exist as direct links to files. If you can inspect a webpage and the links to the files exist in the html, this will retrieve them.
