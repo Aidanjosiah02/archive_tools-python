@@ -12,6 +12,8 @@ This script will only work if the media file is created using:
 
 ``` -o "%(channel)s - [%(channel_id)s]/%(playlist_title)s - [%(playlist_id)s]/%(upload_date)s - %(title)s - [%(id)s] - %(resolution)s.%(ext)s" ```
 
+You can do it in whatever way you please, just make sure the paths match.
+
 -
 
 create_symlinks.py will create relative symlinks within folders whose name is specified in a list in a text file. I probably could have used the associated json files for this, but I wanted to try it this way for now.
