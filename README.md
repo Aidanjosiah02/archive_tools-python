@@ -11,3 +11,8 @@ These text files can be created from <https://github.com/yt-dlp/yt-dlp> using a 
 This script will only work if the media file is created using: 
 
 ``` -o "%(channel)s - [%(channel_id)s]/%(playlist_title)s - [%(playlist_id)s]/%(upload_date)s - %(title)s - [%(id)s] - %(resolution)s.%(ext)s" ```
+
+-
+
+create_symlinks.py will create relative symlinks within folders whose name is specified in a list in text file. I probably could have used the associated json files for this, but I wanted to try it this way for now.
+This text file must be created from https://github.com/mikf/gallery-dl using the "postprocessors" section of the "config.json" file included here. Commands are included in "gallery-dl_commands.txt".
