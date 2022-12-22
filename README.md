@@ -14,5 +14,5 @@ This script will only work if the media file is created using:
 
 -
 
-create_symlinks.py will create relative symlinks within folders whose name is specified in a list in text file. I probably could have used the associated json files for this, but I wanted to try it this way for now.
+create_symlinks.py will create relative symlinks within folders whose name is specified in a list in a text file. I probably could have used the associated json files for this, but I wanted to try it this way for now.
 This text file must be created from https://github.com/mikf/gallery-dl using the "postprocessors" section of the "config.json" file included here. Commands are included in "gallery-dl_commands.txt".
