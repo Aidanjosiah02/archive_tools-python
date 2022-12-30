@@ -4,6 +4,7 @@ The tools I use for archive handling.
 -
 
 create_playlist.py creates playlists from text files whose contents are solely one path per line, each to one file.
+It will also read the line and replace (some) invalid characters internally to match that of the proper file(s). 
 These text files can be created from <https://github.com/yt-dlp/yt-dlp> using a Youtube playlist as the input, and using the switch: 
 
 ``` --print-to-file after_move:"../../%(channel)s - [%(channel_id)s]/%(playlist_title)s - [%(playlist_id)s]/%(upload_date)s - %(title)s - [%(id)s] - %(resolution)s.%(ext)s" "%(playlist_uploader)s - [%(playlist_uploader_id)s]/%(playlist_title)s - [%(playlist_id)s]/- %(playlist_title)s - [%(playlist_id)s]-playlist.txt" ``` 
@@ -12,7 +13,7 @@ This script will only work if the media file is created using:
 
 ``` -o "%(channel)s - [%(channel_id)s]/%(playlist_title)s - [%(playlist_id)s]/%(upload_date)s - %(title)s - [%(id)s] - %(resolution)s.%(ext)s" ```
 
-You can do it in whatever way you please, just make sure your paths match eachother.
+You can do it in whatever way you please, just make sure your paths match eachother. You may also need to change the regex string for detecting seperate directories if you do it different from the switch shown above. If your directory count is different, modify the script to select the highest directory and the file respectively by index from the list that is created per selected line of the playlist file. If your character replacement method is different from "yt-dlp", you must change that in the script as well.
 
 -
 
