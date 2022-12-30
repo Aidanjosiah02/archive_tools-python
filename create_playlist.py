@@ -168,6 +168,6 @@ else:
 			elif q_write_file == "n":
 				exit()
 			else:
-				print("\"" + str(q_continue) + "\"" + " is not a valid input. Please try again.")
+				print("\"" + str(q_write_file) + "\"" + " is not a valid input. Please try again.")
 		except ValueError:
 			continue
