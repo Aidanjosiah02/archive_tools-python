@@ -13,7 +13,7 @@ This script will only work if the media file is created using:
 
 ``` -o "%(channel)s - [%(channel_id)s]/%(playlist_title)s - [%(playlist_id)s]/%(upload_date)s - %(title)s - [%(id)s] - %(resolution)s.%(ext)s" ```
 
-You can do it in whatever way you please, just make sure your paths match eachother. You may also need to change the regex string for detecting seperate directories if you do it different from the switch shown above. If your directory count is different, modify the script to select the highest directory and the file respectively by index from the list that is created per selected line of the playlist file. If your character replacement method is different from "yt-dlp", you must change that in the script as well.
+You can do it in whatever way you please, just make sure your paths match eachother. If your directory count is different, the script can tell. You may also need to change the regex string for detecting seperate directories if you do it different from the switch shown above. If your character replacement method is different from "yt-dlp", you must change that in the script as well.
 
 -
 
