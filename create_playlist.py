@@ -8,6 +8,7 @@ from pathlib import Path
 import re
 import xml.etree.ElementTree as xml
 
+
 DIRECTORY_REL = Path(".")
 DIRECTORY_ABS = Path.cwd()
 playlist_pattern = r'([^/\\]+)(-playlist.txt)$'
@@ -69,7 +70,6 @@ print("3. If the names of all the applicable files exactly match those mentioned
 user_chars = int(input("Enter 1, 2, or 3: "))
 user_path = int(input("Print to file: 1. relative path, 2. absolute path to working directory (Enter 1 or 2): "))
 
-
 merged_paths = []
 fail_path_prep = []
 file_list = {file for file in DIRECTORY_REL.iterdir() if file.is_file()}
@@ -82,13 +82,19 @@ for file in file_list:
 				for line in contents_dir:
 					try:
 						paths = re.split(split_dir, line)
+						len_paths = len(paths)
 						replaced_names = []
 						all_names = []
+						zero_index_empty = None
+						if len(paths[0]) == 0:
+							zero_index_empty = 1
+						else:
+							zero_index_empty = 0
 						if user_path == 1:
-							for dir in paths[1:5]:
+							for dir in paths[zero_index_empty:len_paths - 1]:
 								remove_slash = dir[: len(dir) - 1]
 								all_names.append(remove_slash)
-							all_names.append(paths[5])
+							all_names.append(paths[len_paths])
 							if user_chars == 3:
 								for item in all_names:
 									replaced_names.append(item)
