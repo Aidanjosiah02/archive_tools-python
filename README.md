@@ -19,6 +19,7 @@ You can do it in whatever way you please, just make sure your paths match eachot
 
 create_symlinks.py will create relative symlinks within folders whose name is specified in a list in a text file. I probably could have used the associated json files for this, but I wanted to try it this way for now.
 This text file must be created from https://github.com/mikf/gallery-dl using the "postprocessors" section of the "config.json" file included here. Personal information was removed only from the "deviantart" section. Place your "id", "secret", and "refresh-token" codes there instead. Commands are included in "gallery-dl_commands.txt". I use MS Edge, so just change this to Chrome or Firefox if you use those.
+The config file is configured so as to write the list of folders to line 21 in the generated text file. If yours is different, modify the script to choose the correct line.
 
 -
 
