@@ -23,4 +23,4 @@ The config file is configured so as to write the list of folders to line 21 in t
 
 -
 
-batch_download.py downloads all files of the extension specified if they exist as direct links to files. If you can inspect a webpage and the links to the files exist in the html, this will retrieve them.
+batch_download.py downloads all files of the extension specified if they exist as direct links to files. Modify the script to select the file type you need. If you can inspect a webpage and the links to the files exist in the html, this will retrieve them.
